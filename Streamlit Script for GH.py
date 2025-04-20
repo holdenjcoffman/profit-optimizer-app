@@ -11,7 +11,7 @@ scaler = joblib.load('scaler_20250420_003939.pkl')
 cost = 50
 
 # Add Google API Key
-google_api_key = 'AIzaSyCadUH4OnxOBMeS5KUh4pFLJhUimKXc7-U'
+google_api_key = st.secrets["GOOGLE_MAPS_API_KEY"]
 
 # New geocoder using Google Maps
 geolocator = GoogleV3(api_key=google_api_key)
